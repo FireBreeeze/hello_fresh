@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
 
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
@@ -25,8 +42,283 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+
+      <div class="wrapper">
+    <header class="header">
+
+      <div class="header__top">
+        <div class="container-top">
+          <nav class="menu">
+            <div class="menu__box">
+              <a class="logo" href="#body">
+                <img class="logo__img" src="images/logo.svg" alt="логотип">
+              </a>
+              <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link animation" href="#about">Our Plans</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation" href="#gallery">How It Works</a>
+              </li>
+              <li class="menu__item dropdown">
+                <button class="dropbtn">Our Menus
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+                <li class="menu__item">
+                <a class="menu__link animation" href="#test">Gift Cards</a>
+              </li>
+              <li class="menu__item dropdown">
+                <button class="dropbtn">Sustainability
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation" href="#contacts">Thanksgiving Box</a>
+              </li>
+              </ul>
+            </div>
+            
+
+            <button class="menu__button" type="button">
+              <span class="menu__btn"></span>
+              <span class="sr-only">открыть меню</span>
+            </button>
+
+            
+
+            <button class="btn" type="button">Log in
+              <span class="sr-only">Log in</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container-top">
+        <div class="header__content" style="background-image: url('images/header-bg.jpg')">
+        <!-- 
+          <div class="header__inner">
+            <a class="logo logo__content" href="#body">
+              <img class="logo__img" src="images/logo.svg" alt="логотип">
+            </a>
+            <h1 class="header__title">Neil Patrick Harries<br>&David Burtka</h1>
+          </div>
+          -->
+          <h3 class="header__subtitle">Take the stress</h3>
+          <h3 class="header__subtitle">out of mealtime</h3>
+          <p class="header__text">America's Most Popular Meal Kit</p>
+          <button class="btn--green" type="button">View our plans
+            <span class="sr-only">View our plans</span>
+          </button>
+          <a class="header__link" href="#"></a>
+
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <section class="about section grey" id="about">
+        <div class="container">
+          <h2 class="title">Why HelloFresh?</h2>
+          <ul class="about__inner">
+            <li class="about__list about__list--1">
+              <h6 class="about__title">No skimpin’ on the chicken!</h6>
+              <p class="about__text">Or steak, or fish, or plant protein.</p>
+            </li>
+            <li class="about__list about__list--2">
+              <h6 class="about__title">No commitment whatsoever</h6>
+              <p class="about__text">Skipping weeks or cancelling is super easy.</p>
+            </li>
+            <li class="about__list about__list--3">
+              <h6 class="about__title">The most 5-star reviews</h6>
+              <p class="about__text">Our huge recipe selection wows week after week.</p>
+            </li>
+            <li class="about__list about__list--4">
+              <h6 class="about__title">Fresh and affordable</h6>
+              <p class="about__text">Chef-created deliciousness from $7.49 per meal.</p>
+            </li>
+          </ul>
+          <button class="btn" type="button">Get started
+            <span class="sr-only">Get started</span>
+          </button>
+
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="title gallery__title">Мои работы</h2>
+          
+          <!-- <ul class="gallery__filter">
+            <li class="gallery__btn">
+              <button class="gallery__btn-link" type="button" data-filter="all">Все работы</button>
+            </li>
+            <li class="gallery__btn">
+              <button class="gallery__btn-link" type="button" data-filter=".category-a">Лендинги</button>
+            </li>
+            <li class="gallery__btn">
+              <button class="gallery__btn-link" type="button" data-filter=".category-b">Корпоративные</button>
+            </li>
+            <li class="gallery__btn">
+              <button class="gallery__btn-link" type="button" data-filter=".category-c">E-commerce</button>
+            </li>
+          </ul> --> 
+
+          <ul class="gallery__content">
+            <li class="gallery__item mix category-b">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/indonesia/"><img src="images/gallery/1.jpg" alt="залив"></a>
+            </li>
+            <li class="gallery__item mix category-c">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/INNOMA_VC/"><img src="images/gallery/2.jpg" alt="залив"></a>
+            </li>
+            <li class="gallery__item mix category-c">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/LAMBORGHINI/"><img src="images/gallery/3.jpg" alt="авто"></a>
+            </li>
+            <li class="gallery__item mix category-b">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/O...MARKETING/"><img src="images/gallery/4.jpg" alt="банан"></a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/Portfolio/"><img src="images/gallery/5.jpg" alt="город"></a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/lease_car/"><img src="images/gallery/6.jpg" alt="автомобиль"></a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/dreamtravel/"><img src="images/gallery/7.jpg" alt="башня"></a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/wormwood/"><img src="images/gallery/8.jpg" alt="букет"></a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <a class="link animation" target="_blank" href="https://firebreeeze.github.io/AVTR/"><img src="images/gallery/9.jpg" alt="автомобиль"></a>
+            </li>
+          </ul>
+          <a class="btn" href="https://github.com/FireBreeeze?tab=repositories" target="_blank" >Загрузить еще</a>
+        </div>
+      </section>
+
+      <section class="reviews section grey" id="reviews">
+        <div class="container">
+          <h2 class="title">Хобби</h2>
+          <div class="reviews__inner">
+            <figure class="reviews__quote">
+              <img class="quote__img" src="images/markz.jpg" alt="фотография Марка Цукерберга">
+              <cite class="quote__cite">Конфуций</cite>
+              <blockquote>
+                Забота, то есть внимание к другим, - это основа хорошей жизни, основа хорошего общества.
+              </blockquote>
+            </figure>
+            <a class="reviews__video" data-fancybox style="background-image: url('images/video-bg.jpg')"
+              href="video/video-1.mp4" data-width="1000" data-height="1000">
+              <span class="sr-only">прослушать видео</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="test section" id="test">
+        <div class="container">
+          <h2 class="title">Тестовое задание</h2>
+          
+          <h4 class="subtitle">Часть 1</h4>
+          <div class="test__text">
+            <p>Изначально я изучала самостоятельную верстку на основе html и css, верстая красивые и интересные макеты из figma и photoshop. Со временем ознакомилась с библиотеками и некоторыми фреймворками, npm, gulp и тд. Отчасти благодаря этому меня не пугает верстка без использования библиотек или фреймворков, и в то же время я вижу целесообразность применения некоторых дополнительных инструментов.</p>
+            <p>В современном мире самый главный ресурс – это время. И нужно уметь учиться быстро осваивать дополнительные инструменты, которые могут сэкономить время и трудозатраты при решении некоторых задач.</p>
+            <p>Одним из таких примеров является bootstrap – достаточно широко используемый css-фреймворк. За считанные минуты можно подключить уже готовые заготовки кода к своему проекту, и, используя документацию, достаточно быстро набросать сразу готовый сайт формами (блоками). Это идеальный вариант, если нет времени, или, например, нет дизайна сайта совсем. В данном случае bootstrap – это удобно, и отчасти оправдывает цели и средства.</p>
+            <p>Но есть некоторые минусы использования: достаточно много кода и много лишнего. Например, файл  jquery –библиотеки занимает в разы меньше места, чем bootstrap. Поэтому я бы использовала его только в крайних случаях (небольшой проект, нет дизайна, а нужно срочно, например, лендинг или рекламною страничку). Но многое зависит от исходных данных поставленной задачи и самой задачи.</p>
+            <p>В качестве ярчайшего примера использования – когда нужно сверстать сайт «на коленке», то есть, без качественного и продуманного дизайна.</p>
+          </div>
+            
+          <h4 class="subtitle">Часть 2</h4>
+          <div class="test__text">
+            <p>В Bootstrap и UIKit  можно настроить шаблоны и компоненты для придания уникальности сайта или бренда. Не рекомендуется вносить изменения напрямую в файлы ядра, поскольку их сложно отслеживать, и при обновлении версии все изменения будут потеряны. Можно использовать два метода. Первый  – использование переопределений CSS – применяется к сайтам, использующим BootstrapCDN или предварительно скомпилированные версии Bootstrap. Второй – с использованием переменных Sass – применяется к сайтам, использующим версию исходного кода Bootstrap (на примере Bootstrap).</p>
+            <p>Каждый метод идеально подходит для разных случаев. Хотя использование переопределений CSS проще, оно требует больше времени и его сложно масштабировать. С другой стороны, использование переменных Sass идеально подходит для внесения более обширных изменений на сайте.</p>
+            <p>Для переопределения свойств css целесообразнее создать свой собственный код в отдельном файле и подключить его соответствующим образом.</p>
+            <p>Рассмотрим наш пример, на проекте, в котором используется UIkit, контейнер для контента должен иметь ширину 1366px.</p>
+            <p>Согласно документации нужно добавить класс uk-container к блочному элементу, чтобы придать ему максимальную ширину и обернуть основное содержимое сайта.  Анализ модификаторов размера показал, что в UIkit есть контейнеры с максимальной шириной на 1200px и 1400px (рассматриваю ближайшие к задаче) – нам это не подходит для решения поставленной задачи. Также через диспетчер элементов вижу, что uk-container имеет внутренние отступы (padding) по 40px справа и слева. То есть нам нужно переопределить css свойство контейнера.  Для этого в той же папке, где хранится файл uikit.min.css, создаю отдельный файл, например, custom.css.</p>
+            <p>Подключаю файл к проекту: в index.html  нахожу строку</p>
+            <img src="images/stroke-1.jpg" alt="изображение строки">
+            <p>(подключение css UIKit), ниже пишу</p>
+            <img src="images/stroke-2.jpg" alt="изображение строки">
+            <p>Файл подключен с более высоким уровнем специфичности.</p>
+            <p>В файле custom.css переопределяю свойства max-width: 1286px для нашего контейнера (1286px если хотим сохранить отступы от краев экранов, то 1366 – 40 – 40 = 1286px)</p>
+            <p>.uk-container-custom {<br>max-width: 1286px;<br>}</p>
+            <p>Задаем 1286px</p>
+            <p>Также в html файле добавляем кастомный класс .uk-container-custom к нужным uk-container. (Пример реализован в следующей части задания, применительно к контейнеру с контентом в файле <a class="link animation" href="https://firebreeeze.github.io/ulkit_test_1/step1.html" target="_blank">step1.html</a>).</p>
+            <img src="images/part-2.jpg" alt="изображение контейнера 1366px">
+          </div>
+
+          <h4 class="subtitle">Часть 3</h4>
+          <div class="test__text">
+            <p>Страница №1: Главная страница представлена файлом <a class="link animation" href="https://firebreeeze.github.io/ulkit_test_1/" target="_blank">index.html</a>.</p>
+            <p>В MENU1 есть ссылка на страницу пошагового интерфейса.</p>
+            <p>Страница №1: Страница пошагового интерфейса представлена файлом <a class="link animation" href="https://firebreeeze.github.io/ulkit_test_1/step1.html" target="_blank">step1.html</a>.</p>
+            <p>При клике на Logo – возвращает на исходную первую страницу index.html</p>
+            <p><a class="link animation" href="https://github.com/FireBreeeze/ulkit_test_1" target="_blank">Репозиторий: https://github.com/FireBreeeze/ulkit_test_1</a></p>
+            <p><a class="link animation" href="https://firebreeeze.github.io/ulkit_test_1/ " target="_blank">GitPages: https://firebreeeze.github.io/ulkit_test_1/ </a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="title">Контакты</h2>
+          <div class="contacts__inner">
+            <address class="contacts__info">
+              <div class="contacts__text">
+                <p>Связаться со мной можно напрямую по номеру телефона, email, в соцсетях:</p>
+              </div>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+79818581852">Позвонить</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:brize2021@bk.ru">Написать письмо</a>
+                </li>
+              </ul>
+
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" style="background-image: url('images/icon-telegram.svg')" href="https://t.me/firebreeeze"
+                    target="_blank">
+                    <span class="sr-only">ссылка на telegram</span>
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="#body">
+        <img class="logo__img" src="images/logo.svg" alt="логотип">
+      </a>
+    </footer>
+
+
+
+  </div>
+
+
+        
     </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
