@@ -517,8 +517,12 @@ body {
 
 .recipes{
   text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #E4E4E4;
 }
-.recipes__text{
+.recipes__text,
+.tag__text,
+.plans__text{
   line-height: 1.25;
   margin-bottom: 25px;
 }
@@ -571,7 +575,6 @@ body {
 }
 .slider__title{
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 23px;
   line-height: 1.4;
@@ -601,13 +604,55 @@ body {
 .slider__text--grey{
   background-color: #37938A;
 }
+.tag{
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E4E4E4;
+}
 
+.tag__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-
-
-
-
-
+.tag__item:not(:last-child) {
+  margin-right: 30px;
+}
+.tag__item{
+  max-width: 260px;
+  height: 560px;
+}
+.tag__img{
+  margin-bottom: 30px;
+}
+.tag__title{
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: -0.3px;
+}
+.tag__description{
+  max-width: 200px;
+  margin: 0 auto;
+}
+.plans{
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.plans__inner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+}
+.plans__btn{
+  margin-bottom: 40px;
+}
 
 
 
